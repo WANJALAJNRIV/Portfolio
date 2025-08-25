@@ -1,0 +1,113 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 10%;
+}
+
+/* Left content */
+.intro {
+  max-width: 600px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #333;
+}
+
+.intro p {
+  font-size: 1rem;
+  margin: 15px 0 30px;
+  color: #444;
+}
+
+/* Buttons */
+.buttons {
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-right: 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-outline {
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.btn-outline:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Social Links */
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #007bff;
+}
+
+/* Right illustration */
+.illustration img {
+  width: 400px;
+  max-width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .illustration {
+    margin-top: 40px;
+  }
+}
