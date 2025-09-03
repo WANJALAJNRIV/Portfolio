@@ -7,10 +7,22 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Left Section -->
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Stephen David</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="intro">
-      <h1>Stephen David</h1>
       <h2>Software Developer | Web & Mobile Apps</h2>
       <p>I create modern, user-friendly software solutions for the web and beyond.</p>
       
@@ -26,159 +38,148 @@
       </div>
     </div>
 
-    <!-- Right Section (Illustration) -->
     <div class="illustration">
       <img src="Images/hero.png" alt="Developer Illustration">
     </div>
-  </div>
+  </section>
 
+  <!-- About Section -->
   <section class="about-section" id="about">
-  <div class="about-container">
-    <div class="about-left">
-      <h2>About Me</h2>
-    </div>
-    <div class="about-right">
-      <p>
-        I’m a full-stack software developer, skilled in both frontend and backend, passionate about 
-        crafting clean, efficient, and user-friendly digital solutions. What excites me most is 
-        building applications that not only work seamlessly but also create meaningful experiences 
-        for users.
-      </p>
-      <p>
-        As a freelancer, I enjoy the freedom of working anytime and anywhere, collaborating 
-        with clients to bring their ideas to life. Over the years, I’ve built websites and 
-        applications that clients truly loved—projects that combined creativity with solid 
-        engineering, leaving a lasting impression.
-      </p>
-      <p>
-        Beyond coding, I bring a unique perspective by constantly learning and staying curious, 
-        which allows me to adapt quickly to new challenges and technologies.
-      </p>
-      <p>
-        When I’m not coding, you’ll probably find me on a nature walk, traveling to new places, 
-        reading novels, or meditating to recharge and stay focused.
-      </p>
+    <h2>About Me</h2>
+    <p>
+      I’m a full-stack software developer, skilled in both frontend and backend, passionate about 
+      crafting clean, efficient, and user-friendly digital solutions. 
+    </p>
+    <p>
+      As a freelancer, I enjoy the freedom of working anytime and anywhere, collaborating 
+      with clients to bring their ideas to life. Over the years, I’ve built websites and 
+      applications that clients truly loved—projects that combined creativity with solid 
+      engineering, leaving a lasting impression.
+    </p>
+    <p>
+      Beyond coding, I bring a unique perspective by constantly learning and staying curious, 
+      which allows me to adapt quickly to new challenges and technologies.
+    </p>
+    <p>
+      When I’m not coding, you’ll probably find me on a nature walk, traveling to new places, 
+      reading novels, or meditating to recharge and stay focused.
+    </p>
 
-      <h3>Here are a few technologies I’ve been working with recently:</h3>
+    <h3>Technologies I’ve been working with recently:</h3>
+    <ul class="tech-list">
+      <li>JavaScript (ES6+)</li>
+      <li>TypeScript</li>
+      <li>React</li>
+      <li>Eleventy</li>
+      <li>Node.js</li>
+      <li>WordPress</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+<section class="projects-section" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <!-- Project 1 -->
+  <div class="project-card">
+    <img src="Images/hero.png" alt="Pasture Homes Website" class="project-img">
+    <div class="project-info">
+      <h3>Pasture Homes</h3>
+      <p>
+        A professional real estate website designed to support buying houses from sellers and reselling them to buyers. 
+        It integrates Zapier and Resimpli to streamline operations.
+      </p>
       <ul class="tech-list">
-        <li>JavaScript (ES6+)</li>
-        <li>TypeScript</li>
         <li>React</li>
-        <li>Eleventy</li>
-        <li>Node.js</li>
-        <li>WordPress</li>
+        <li>CSS</li>
       </ul>
     </div>
   </div>
-</section>
 
-<section class="projects-section">
-    <h2 class="section-title">Projects</h2>
-
-    <!-- Project 1 -->
-    <div class="project-card">
-      <div class="project-img"></div>
-      <div class="project-info">
-        <h3>Pasture Homes</h3>
-        <p>
-          A clean and professional real estate website for Pasture Homes, designed to support buying houses from sellers and reselling them to buyers. 
-          It features an intuitive property showcase with branded styling and integrates Zapier and Resimpli to streamline operations.
-        </p>
-        <ul class="tech-list">
-          <li>React (JavaScript ES6+)</li>
-          <li>CSS</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project-card">
-      <div class="project-img"></div>
-      <div class="project-info">
-        <h3>Animal Adoption Platform</h3>
-        <p>
-          An animal adoption platform where users can register, browse pets, and apply for adoption, while admins manage users and pet information.
-        </p>
-        <ul class="tech-list">
-          <li>Python (Django)</li>
-          <li>SQLite</li>
-          <li>HTML, CSS, JavaScript</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project-card">
-      <div class="project-img"></div>
-      <div class="project-info">
-        <h3>SPA - page</h3>
-        <p>
-          A news and articles platform where users can register, log in, and log out. Articles are organized into groups, and selecting a group displays only the related content.
-        </p>
-        <ul class="tech-list">
-          <li>Python (Django)</li>
-          <li>Vue.js</li>
-          <li>SQLite</li>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Node.js / NPM</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Project 4 -->
-    <div class="project-card">
-      <div class="project-img"></div>
-      <div class="project-info">
-        <h3>Restful-Currency-Converter</h3>
-        <p>
-          A PHP web app for real-time currency conversion with historical rate tracking, API integration, and XML-based data storage. 
-          It features a simple, user-friendly interface and follows coding best practices.
-        </p>
-        <ul class="tech-list">
-          <li>PHP</li>
-          <li>XML</li>
-          <li>HTML, CSS, JavaScript</li>
-        </ul>
-      </div>
-    </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-  <div class="contact-container">
-    
-    <!-- Left Side -->
-    <div class="contact-left">
-      <h2>Contact Me</h2>
+  <!-- Project 2 -->
+  <div class="project-card">
+    <img src="Images/hero.png" alt="Animal Adoption Platform" class="project-img">
+    <div class="project-info">
+      <h3>Animal Adoption Platform</h3>
       <p>
-        Got a project in mind or just want to say hi?  
-        Feel free to reach out — I’d love to hear from you!
+        A platform where users can register, browse pets, and apply for adoption, while admins manage users and pet info.
       </p>
-      <ul class="contact-info">
-        <li><strong>Email:</strong> yourname@example.com</li>
-        <li><strong>Phone:</strong> +254 712 345 678</li>
-        <li><strong>Location:</strong> Nairobi, Kenya</li>
+      <ul class="tech-list">
+        <li>Django</li>
+        <li>SQLite</li>
+        <li>HTML, CSS, JS</li>
       </ul>
     </div>
+  </div>
 
-    <!-- Right Side (Form) -->
-    <div class="contact-right">
-      <form class="contact-form">
-        <div class="form-group">
-          <input type="text" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <input type="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <textarea placeholder="Your Message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn-send">Send Message</button>
-      </form>
+  <!-- Project 3 -->
+  <div class="project-card">
+    <img src="Images/hero.png" alt="SPA News App" class="project-img">
+    <div class="project-info">
+      <h3>SPA - News & Articles</h3>
+      <p>
+        A single-page app for articles grouped by category, with login and user management features.
+      </p>
+      <ul class="tech-list">
+        <li>Django</li>
+        <li>Vue.js</li>
+        <li>SQLite</li>
+      </ul>
     </div>
-    
+  </div>
+
+  <!-- Project 4 -->
+  <div class="project-card">
+    <img src="Images/hero.png" alt="Currency Converter" class="project-img">
+    <div class="project-info">
+      <h3>Restful-Currency-Converter</h3>
+      <p>
+        A PHP web app for real-time currency conversion with historical rate tracking, API integration, and XML storage.
+      </p>
+      <ul class="tech-list">
+        <li>PHP</li>
+        <li>XML</li>
+        <li>HTML, CSS, JS</li>
+      </ul>
+    </div>
+  </div>
+   <div class="project-card">
+    <img src="Images/hero.png" alt="Currency Converter" class="project-img">
+    <div class="project-info">
+      <h3>New oeo-Currency-Converter</h3>
+      <p>
+        A PHP web app for real-time currency conversion with historical rate tracking, API integration, and XML storage.
+      </p>
+      <ul class="tech-list">
+        <li>PHP</li>
+        <li>XML</li>
+        <li>HTML, CSS, JS</li>
+      </ul>
+    </div>
   </div>
 </section>
 
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      Got a project in mind or just want to say hi?  
+      Feel free to reach out — I’d love to hear from you!
+    </p>
+    
+    <ul class="contact-info">
+      <li><strong>Email:</strong> yourname@example.com</li>
+      <li><strong>Phone:</strong> +254 712 345 678</li>
+      <li><strong>Location:</strong> Nairobi, Kenya</li>
+    </ul>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
 </body>
 </html>
