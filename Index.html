@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stephen David | Portfolio</title>
   <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -64,16 +65,63 @@
       When I’m not coding, you’ll probably find me on a nature walk, traveling to new places, 
       reading novels, or meditating to recharge and stay focused.
     </p>
+<h3>Technologies I’ve been working with recently:</h3>
 
-    <h3>Technologies I’ve been working with recently:</h3>
+<div class="tech-container">
+  <!-- Frontend -->
+  <div class="tech-category">
+    <h4>Frontend</h4>
     <ul class="tech-list">
       <li>JavaScript (ES6+)</li>
-      <li>TypeScript</li>
-      <li>React</li>
-      <li>Eleventy</li>
-      <li>Node.js</li>
-      <li>WordPress</li>
+      <li>React.js</li>
+      <li>HTML5 / CSS3</li>
+      <li>TailwindCSS / Bootstrap</li>
     </ul>
+  </div>
+
+  <!-- Backend -->
+  <div class="tech-category">
+    <h4>Backend</h4>
+    <ul class="tech-list">
+      <li>Python (Django, Flask)</li>
+      <li>Node.js / Express</li>
+      <li>PHP</li>
+    </ul>
+  </div>
+
+  <!-- Databases -->
+  <div class="tech-category">
+    <h4>Databases</h4>
+    <ul class="tech-list">
+      <li>MySQL</li>
+      <li>PostgreSQL</li>
+      <li>SQLite</li>
+      <li>MongoDB</li>
+    </ul>
+  </div>
+
+  <!-- Tools & DevOps -->
+  <div class="tech-category">
+    <h4>Tools & DevOps</h4>
+    <ul class="tech-list">
+      <li>Git & GitHub</li>
+      <li>Docker</li>
+      <li>Linux</li>
+      <li>REST APIs / GraphQL</li>
+    </ul>
+  </div>
+
+  <!-- CMS & Others -->
+  <div class="tech-category">
+    <h4>CMS & Others</h4>
+    <ul class="tech-list">
+      <li>WordPress</li>
+      <li>Shopify</li>
+      <li>Figma (UI/UX)</li>
+    </ul>
+  </div>
+</div>
+
   </section>
 
   <!-- Projects Section -->
@@ -158,7 +206,7 @@
   </div>
 </section>
 
-  <!-- Contact Section -->
+<!-- Contact Section -->
 <section class="contact-section" id="contact">
   <h2>Get In Touch</h2>
   <p>
@@ -169,12 +217,12 @@
   <div class="contact-container">
     <!-- Contact Info -->
     <ul class="contact-info">
-      <li><strong>Email:</strong> <a href="mailto:wanjalajnr04@gmail.com">wanjalajnr04@gmail.com</a></li>
-      <li><strong>Phone:</strong> <a href="tel:+254718229001">+254 718229001</a></li>
-      <li><strong>WhatsApp:</strong> <a href="https://wa.me/254718229001" target="_blank">Chat on WhatsApp</a></li>
-      <li><strong>Telegram:</strong> <a href="https://t.me/YourTelegramUsername" target="_blank">Message on Telegram</a></li>
-      <li><strong>Website:</strong> <a href="https://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
-      <li><strong>Location:</strong> Nairobi, Kenya</li>
+      <li><i class="fas fa-envelope"></i> <a href="mailto:wanjalajnr04@gmail.com">wanjalajnr04@gmail.com</a></li>
+      <li><i class="fas fa-phone"></i> <a href="tel:+254718229001">+254 718229001</a></li>
+      <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254718229001" target="_blank">Chat on WhatsApp</a></li>
+      <li><i class="fab fa-telegram"></i> <a href="https://t.me/YourTelegramUsername" target="_blank">Message on Telegram</a></li>
+      <li><i class="fas fa-globe"></i> <a href="https://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
+      <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
     </ul>
 
     <!-- Contact Form -->
@@ -182,10 +230,11 @@
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
       <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
     </form>
   </div>
 </section>
+
 
 
 </body>
