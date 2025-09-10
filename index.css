@@ -25,11 +25,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10%;
+  padding: 15px 8%;
+  flex-wrap: wrap;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
   font-weight: bold;
   color: #007bff;
 }
@@ -37,7 +38,8 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .nav-links a {
@@ -56,13 +58,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 90vh;
-  padding: 50px 10%;
+  min-height: 85vh;
+  padding: 50px 8%;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .intro h2 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -70,9 +73,9 @@ header {
 .intro p {
   margin-bottom: 20px;
   color: #444;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
 }
 
-/* Buttons */
 .buttons {
   margin: 20px 0;
 }
@@ -106,7 +109,6 @@ header {
   color: #fff;
 }
 
-/* Social Links */
 .socials {
   margin-top: 20px;
 }
@@ -123,7 +125,6 @@ header {
   color: #007bff;
 }
 
-/* Hero Illustration */
 .illustration img {
   width: 500px;
   max-width: 100%;
@@ -132,11 +133,11 @@ header {
 /* About Section */
 .about-section {
   background: #f9f9f9;
-  padding: 60px 10%;
+  padding: 60px 8%;
 }
 
 .about-section h2 {
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -144,13 +145,7 @@ header {
 .about-section p {
   margin-bottom: 20px;
   color: #333;
-}
-
-.about-section h3 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 1.05rem);
 }
 
 /* Tech Section */
@@ -187,7 +182,7 @@ header {
   font-size: 0.95rem;
   color: #444;
   margin-bottom: 8px;
-  padding-left: 15px;
+  padding-left: 18px;
   position: relative;
 }
 
@@ -197,25 +192,22 @@ header {
   left: 0;
   color: #007bff;
   font-size: 0.9rem;
-  padding-left: 5px;
 }
-
 
 /* Projects Section */
 .projects-section {
-  padding: 60px 10%;
+  padding: 60px 8%;
   background: #fff;
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
   font-weight: bold;
   margin-bottom: 30px;
   border-bottom: 3px solid #007bff;
   display: inline-block;
 }
 
-/* Card Layout */
 .project-card {
   display: flex;
   align-items: flex-start;
@@ -226,13 +218,13 @@ header {
   margin-bottom: 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   transition: transform 0.2s ease;
+  flex-wrap: wrap;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
 }
 
-/* Project Images */
 .project-img {
   width: 220px;
   height: 150px;
@@ -241,7 +233,6 @@ header {
   flex-shrink: 0;
 }
 
-/* Info */
 .project-info {
   flex: 1;
 }
@@ -260,16 +251,13 @@ header {
 }
 
 /* Tech List */
-.tech-list {
-  list-style: none;
+.project-info .tech-list {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
 }
 
-.tech-list li {
+.project-info .tech-list li {
   background: #e9f2ff;
   color: #007bff;
   padding: 6px 14px;
@@ -277,28 +265,15 @@ header {
   font-size: 0.9rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .project-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .project-img {
-    width: 100%;
-    height: 180px;
-  }
-}
-
 /* Contact Section */
 .contact-section {
-  padding: 70px 10%;
+  padding: 70px 8%;
   background: #f4f6f9;
   text-align: center;
 }
 
 .contact-section h2 {
-  font-size: 2.2rem;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
   font-weight: 700;
   margin-bottom: 10px;
   color: #222;
@@ -307,10 +282,9 @@ header {
 .contact-section p {
   margin-bottom: 40px;
   color: #555;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
 }
 
-/* Layout */
 .contact-container {
   display: flex;
   justify-content: space-between;
@@ -319,10 +293,9 @@ header {
   text-align: left;
 }
 
-/* Contact Info */
-.contact-info {
-  list-style: none;
-  flex: 1;
+.contact-info,
+.contact-form {
+  flex: 1 1 300px;
   padding: 20px;
   background: #fff;
   border-radius: 12px;
@@ -341,8 +314,6 @@ header {
 .contact-info i {
   font-size: 1.2rem;
   color: #007bff;
-  width: 20px;
-  text-align: center;
 }
 
 .contact-info a {
@@ -354,15 +325,6 @@ header {
 .contact-info a:hover {
   color: #0056b3;
   text-decoration: underline;
-}
-
-/* Contact Form */
-.contact-form {
-  flex: 1;
-  padding: 20px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .contact-form input,
@@ -406,21 +368,13 @@ header {
   background: #0056b3;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .contact-container {
+/* 📱 Responsive Tweaks */
+@media (max-width: 768px) {
+  .navbar {
     flex-direction: column;
+    text-align: center;
   }
 
-  .contact-info,
-  .contact-form {
-    width: 100%;
-  }
-}
-
-
-/* Responsive */
-@media (max-width: 900px) {
   .hero {
     flex-direction: column;
     text-align: center;
@@ -428,5 +382,19 @@ header {
 
   .illustration {
     margin-top: 30px;
+  }
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .contact-container {
+    flex-direction: column;
   }
 }
